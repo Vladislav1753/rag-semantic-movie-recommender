@@ -4,6 +4,10 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 from dotenv import load_dotenv
 import ast
+import os
+
+
+port = int(os.environ.get("PORT", 7860))
 
 load_dotenv()
 
@@ -152,4 +156,4 @@ with gr.Blocks(theme=gr.themes.Glass()) as dashboard:
     )
 
 if __name__ == "__main__":
-    dashboard.launch()
+    dashboard.launch(server_name="0.0.0.0", server_port=port)
