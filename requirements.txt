@@ -1,0 +1,12 @@
+requests
+pandas
+kagglehub
+langchain
+langchain-community
+langchain-openai
+langchain-chroma
+python-dotenv
+transformers
+numpy
+tqdm
+gradio
