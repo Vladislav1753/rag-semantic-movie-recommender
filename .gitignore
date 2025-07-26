@@ -58,3 +58,5 @@ dist/
 # Google Cloud / Deployment
 .gcloud/
 .gcp/
+
+chroma_db_movies/
